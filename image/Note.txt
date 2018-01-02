@@ -1,0 +1,4 @@
+Thumbs		: 120 x 90
+Portfolio Thumbs: 267 x 200
+Slider Images	: 1027 x 768
+High Res	: no Restriction

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>NIKHIL MANDLIK - 3D Gallery</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" href="css/image-slideshow.css" type="text/css">
+	<script type="text/javascript" src="javascript/image-slideshow.js">	</script>
+	<script src="javascript/3DScripts/three.min.js"></script>
+	<script src="javascript/3DScripts/OBJLoader.js"></script>
+	<script src="javascript/3DScripts/Detector.js"></script>
+	<script src="javascript/3DScripts/Stats.js"></script>
+    <script src="3DModels/3DModels.js"></script>
+</head>
+
+<body><!-- #BeginLibraryItem "/Library/Header.lbi" -->
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+  	<TD width="10%" >&nbsp;</TD>
+  	<TD align="center" class="myname">
+    <a href="http://www.nikhilmandlik.com/" STYLE="text-decoration: none; color:#000">NIKHIL MANDLIK</a></TD>
+    <TD class="email" align="center"><a href="mailto:nikhil_mandlik@yahoo.com">nikhil_mandlik@yahoo.com</a></TD>  
+    <TD align="center" class="phone"><b>(415)-290-4278</b></TD>
+    <TD align="center" rowspan="2">
+	<a href="https://www.facebook.com/nikhil.mandlik.10/info"><img src="image/Logos/facebook_logo.png" /></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="http://www.linkedin.com/pub/nikhil-mandlik/20/408/6"><img src="image/Logos/LinkedIn.jpg" /></a> 
+    </TD>
+    <TD width="10%" >&nbsp;</TD>
+  </TR>    
+  <TR>
+  	<TD width="10%" >&nbsp;</TD>
+  	<TD align="center" class="occupation">3D Artist</TD>
+    <TD width="20%" >&nbsp;</TD>
+    <TD width="20%" >&nbsp;</TD>
+    <TD width="20%" >&nbsp;</TD>
+    <TD width="10%" >&nbsp;</TD>
+  </TR>
+  <TR>
+	<TD width="10%">&nbsp;</TD>
+  	<TD width="20%" align="center" class="menu"> <a STYLE="color:#000" href="index.html"> <b>HOME</b></a></TD>
+    <TD width="20%" align="center" class="menu"><a STYLE="color:#000" href="DemoReel.html"><b>DEMO REEL</b></a></TD>
+    <TD width="20%" align="center" class="menu"><a STYLE="color:#000" href="Personal.html"><b>PORTFOLIO</b></a></TD>
+    <TD width="20%" align="center" class="menu"><a STYLE="color:#000" href="Resume.pdf"><b>RESUME</b></a>        
+    <a href="Resume.pdf"><img src="image/Logos/pdf_logo.png"></a>
+    </a>
+    </TD>
+    <TD width="10%">&nbsp;</TD>
+  </TR>   
+
+</TABLE><!-- #EndLibraryItem --><DIV class="screen">
+<TABLE align="center" border="0" width="100%">
+<TR align="center">
+<TD >&nbsp;</TD>
+</TR>
+<TR>
+	<TD align="center" class="help">
+	1. LMB + Move Mouse in any Direction     - Rotate 3D Model <br/>
+    2. RMB + Move Mouse in any Direction     - Pan 3D Model <br />
+    3. MMB + UP/DOWN Direction - Zoom In/Out 3D Model
+	</TD>
+</TR>
+<TR align="center">
+	<TD>
+	<div id="dhtmlgoodies_slideshow">
+        <div id="galleryContainer" align="center">
+            <div id="arrow_left"><img src="image/Thumbs/arrow_left.gif"></div>
+            <div id="arrow_right"><img src="image/Thumbs/arrow_right.gif"></div>
+            <div id="theImages">
+            <!-- Thumbnails -->	        
+            <a href="#" onclick="Hiranyakashipu();return false"><img src="3DModels/Hiranyakashipu/HiranyakashipuThumb.jpg"></a>		
+            <a href="#" onclick="Mace();return false"><img src="3DModels/Hiranyakashipu/MaceThumb.jpg"></a>	
+            <a href="#" onclick="Natalie();return false"><img src="3DModels/Natalie/NatalieThumb.jpg"></a>		
+
+            <!-- End thumbnails -->
+                
+            <!-- Image captions -->	
+            <div class="imageCaption">1. LMB + Any Direction     - Rotate 3D Model<br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
+            <div class="imageCaption">1. LMB + Any Direction     - Rotate 3D Model<br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
+            <div class="imageCaption">1. LMB + Any Direction     - Rotate 3D Model<br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
+            <div id="slideEnd"></div>
+            <!-- End image captions -->
+            </div>
+        </div>
+        <div id="previewPane" align="center">
+            <div id="chartId">
+            <img src="3DModels/Help/Help.jpg">
+            </div>
+            <span id="waitMessage">Loading image. Please wait</span>	
+          <div id="largeImageCaption"></div>
+        </div>	
+	</div>
+	</TD>
+
+</TR>
+</TABLE>
+</DIV><!-- #BeginLibraryItem "/Library/Footer.lbi" -->
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+	<TD width="10%" >&nbsp;</TD>
+  	<TD width="80%" colspan="4" align="center"><HR></TD>
+    <TD width="10%" >&nbsp;</TD>
+  </TR>
+  
+  <TR>
+	<TD width="10%" >&nbsp;</TD>
+  	<TD width="80%" colspan="4" align="Left" class="copyright">Copyright &copy; 2013 NIKHIL MANDLIK. All rights reserved</TD>
+    <TD width="10%" >&nbsp;</TD>
+  </TR>
+  <TR><TD>&nbsp;</TD></TR>
+  <TR><TD>&nbsp;</TD></TR>
+  
+  
+</TABLE><!-- #EndLibraryItem --></body>
+</html>
