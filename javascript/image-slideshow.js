@@ -60,11 +60,6 @@
     }
 
     function initSlideShow() {
-        document.getElementById('arrow_left').onmousemove = startSlide;
-        document.getElementById('arrow_left').onmouseout = releaseSlide;
-        document.getElementById('arrow_right').onmousemove = startSlide;
-        document.getElementById('arrow_right').onmouseout = releaseSlide;
-
         imageGalleryObj = document.getElementById('theImages');
         imageGalleryLeftPos = imageGalleryObj.offsetLeft;
         var galleryContainer = document.getElementById('galleryContainer');
@@ -118,7 +113,33 @@
         document.getElementById('largeImageCaption').innerHTML = imageGalleryCaptions[imageIndex];
         document.getElementById('largeImageCaption').style.display = 'block';
     }
+    
     window.onload = initSlideShow;
+    
+
+    function renderModel(modelName) {
+        switch (modelName.toLowerCase()) {
+            case 'natalie':
+                natalie();
+                break;
+            case 'man':
+                man();
+                break;
+            case 'hiranyakashipu':
+                hiranyakashipu();
+                break;
+            case 'mace':
+                mace();
+                break;
+            default:
+                Help();
+                break;
+        }
+
+        setTimeout(function () {
+            render();
+        }, 100);
+    }
 
     function Help() {
         var cameraz = 17;
@@ -126,28 +147,28 @@
         init(cameraz, objy, 'Hiranyakashipu');
     }
 
-    function Natalie() {
+    function natalie() {
         var cameraz = 30;
 		var objy = -10;
 		addSelected('Natalie');
         init(cameraz, objy, 'Natalie');
     }
 
-    function Man() {
+    function man() {
         var cameraz = 250;
 		var objy = -90;
 		addSelected('Mace');
         init(cameraz, objy, 'Man');
     }
 
-    function Hiranyakashipu() {
+    function hiranyakashipu() {
         var cameraz = 17;
 		var objy = -6;
 		addSelected('hiranyakashipu');
         init(cameraz, objy, 'Hiranyakashipu');
     }
 
-    function Mace() {
+    function mace() {
         var cameraz = 14;
 		var objy = -5;
 		addSelected('Mace');
@@ -156,7 +177,6 @@
 	
 	function addSelected (model) {
 		var images = document.querySelectorAll("#theImages a");
-
 		images.forEach(function(a) {
 			a.style.opacity = "0.5";
 		});

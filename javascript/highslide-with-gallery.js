@@ -1067,8 +1067,7 @@ get : function(key) {
 		case 'osize':
 			return this.get('wsize') + (this.exp.outline ? 2*this.exp.outline.offset : 0);
 		case 'imgPad':
-			return this.imgSize ? Math.round((this.size - this.imgSize) / 2) : 0;
-		
+			return this.imgSize ? Math.round((this.size - this.imgSize) / 2) : 0;	
 	}
 },
 calcBorders: function() {
