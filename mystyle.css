@@ -73,6 +73,10 @@ menubar:hover {
     margin: 0 10px;
 }
 
+.help-image {
+    width: 100%;
+}
+
 .professional {
     color: #8000FF;
     font-size:36px;
