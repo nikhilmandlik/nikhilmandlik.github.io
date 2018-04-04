@@ -1,22 +1,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<title>NIKHIL MANDLIK - 3D Gallery</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   	<link rel="stylesheet" type="text/css" href="mystyle.css">
-	<link rel="stylesheet" href="css/image-slideshow.css" type="text/css">
-	<script type="text/javascript" src="javascript/image-slideshow.js">	</script>
-	<script src="javascript/3DScripts/three.min.js"></script>
-	<script src="javascript/3DScripts/OBJLoader.js"></script>
-	<script src="javascript/3DScripts/Detector.js"></script>
-	<script src="javascript/3DScripts/Stats.js"></script>
-    <script src="3DModels/3DModels.js"></script>
+  <title>NIKHIL MANDLIK - 3D Gallery</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="css/image-slideshow.css" type="text/css">
+  <script type="text/javascript" src="javascript/image-slideshow.js">
+  </script>
+  <script src="javascript/3DScripts/three.min.js"></script>
+  <script src="javascript/3DScripts/OBJLoader.js"></script>
+  <script src="javascript/3DScripts/Detector.js"></script>
+  <script src="javascript/3DScripts/Stats.js"></script>
+  <script src="3DModels/3DModels.js"></script>
 </head>
 
-<body><!-- #BeginLibraryItem "/Library/Header.lbi" -->
-<link href="mystyle.css" rel="stylesheet" type="text/css">
+<body>
+  <!-- #BeginLibraryItem "/Library/Header.lbi" -->
+  <link href="mystyle.css" rel="stylesheet" type="text/css">
 
-<div>
+  <div>
     <div class="name-header">
       Nikhil Mandlik
     </div>
@@ -32,7 +35,7 @@
       </span>
     </div>
   </div>
-  
+
   <div class="menubar">
     <span>
       <a class="menu-link" href="index.html">Home</a>
@@ -48,56 +51,60 @@
     </span>
   </div>
 
-<DIV class="screen">
-<TABLE align="center" border="0" width="100%">
-<TR align="center">
-<TD >&nbsp;</TD>
-</TR>
-<TR>
-	<TD align="center" class="help">
-	1. LMB + Move Mouse in any Direction     - Rotate 3D Model <br/>
-    2. RMB + Move Mouse in any Direction     - Pan 3D Model <br />
-    3. MMB + UP/DOWN Direction - Zoom In/Out 3D Model
-	</TD>
-</TR>
-<TR align="center">
-	<TD>
-	<div id="dhtmlgoodies_slideshow">
-        <div id="galleryContainer" align="center">
-            <div id="arrow_left"><img src="image/Thumbs/arrow_left.gif"></div>
-            <div id="arrow_right"><img src="image/Thumbs/arrow_right.gif"></div>
-            <div id="theImages">
-            <!-- Thumbnails -->	        
-            <a href="#" onclick="Hiranyakashipu();return false"><img src="3DModels/Hiranyakashipu/HiranyakashipuThumb.jpg"></a>		
-            <a href="#" onclick="Mace();return false"><img src="3DModels/Hiranyakashipu/MaceThumb.jpg"></a>	
-            <a href="#" onclick="Natalie();return false"><img src="3DModels/Natalie/NatalieThumb.jpg"></a>		
+  <DIV class="screen">
+    <TABLE align="center" border="0" width="100%">
+      <TR align="center">
+        <TD>&nbsp;</TD>
+      </TR>
+      <TR>
+        <TD align="center" class="help">
+          1. LMB + Move Mouse in any Direction - Rotate 3D Model
+          <br/> 2. RMB + Move Mouse in any Direction - Pan 3D Model
+          <br /> 3. MMB + UP/DOWN Direction - Zoom In/Out 3D Model
+        </TD>
+      </TR>
+      <TR align="center">
+        <TD>
+          <div id="dhtmlgoodies_slideshow">
+            <div id="galleryContainer" align="center">
+              <div id="theImages">
+                <a href="#" onclick="Hiranyakashipu();return false">
+                  <img class="hiranyakashipu" src="3DModels/Hiranyakashipu/HiranyakashipuThumb.jpg">
+                </a>
+                <a href="#" onclick="Mace();return false">
+                  <img class="Mace" src="3DModels/Hiranyakashipu/MaceThumb.jpg">
+                </a>
+                <a href="#" onclick="Natalie();return false">
+                  <img class="Natalie" src="3DModels/Natalie/NatalieThumb.jpg">
+                </a>
 
-            <!-- End thumbnails -->
-                
-            <!-- Image captions -->	
-            <div class="imageCaption">1. LMB + Any Direction     - Rotate 3D Model<br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
-            <div class="imageCaption">1. LMB + Any Direction     - Rotate 3D Model<br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
-            <div class="imageCaption">1. LMB + Any Direction     - Rotate 3D Model<br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
-            <div id="slideEnd"></div>
-            <!-- End image captions -->
+                <div class="imageCaption">1. LMB + Any Direction - Rotate 3D Model
+                  <br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
+                <div class="imageCaption">1. LMB + Any Direction - Rotate 3D Model
+                  <br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
+                <div class="imageCaption">1. LMB + Any Direction - Rotate 3D Model
+                  <br />2. MMB + UP/DOWN Direction - Zoom In/Out 3D Model</div>
+                <div id="slideEnd"></div>
+              </div>
             </div>
-        </div>
-        <div id="previewPane" align="center">
-            <div id="chartId">
-            <img src="3DModels/Help/Help.jpg">
+            <div id="previewPane" align="center">
+              <div id="chartId">
+                <img src="3DModels/Help/Help.jpg">
+              </div>
+              <span id="waitMessage">Loading image. Please wait</span>
+              <div id="largeImageCaption"></div>
             </div>
-            <span id="waitMessage">Loading image. Please wait</span>	
-          <div id="largeImageCaption"></div>
-        </div>	
-	</div>
-	</TD>
+          </div>
+        </TD>
 
-</TR>
-</TABLE>
-</DIV><!-- #BeginLibraryItem "/Library/Footer.lbi" -->
-<link href="mystyle.css" rel="stylesheet" type="text/css">
-<div class="footer">
-  <HR> Copyright &copy; 2013 Nikhil Mandlik. All rights reserved
-</div>
+      </TR>
+    </TABLE>
+  </DIV>
+
+  <link href="mystyle.css" rel="stylesheet" type="text/css">
+  <div class="footer">
+    <HR> Copyright &copy; 2013 Nikhil Mandlik. All rights reserved
+  </div>
 </body>
+
 </html>
