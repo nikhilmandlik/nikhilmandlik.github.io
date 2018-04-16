@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>spinner</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M170.516057,130.258028 C155.740065,159.752522 125.234558,180 90,180 C40.2943725,180 0,139.705627 0,90 C0,40.2943725 40.2943725,0 90,0 C125.234558,0 155.740065,20.2474781 170.516057,49.7419717 L163.359074,53.3204631 C149.896503,26.4477022 122.102598,8 90,8 C44.7126505,8 8,44.7126505 8,90 C8,135.287349 44.7126505,172 90,172 C122.102598,172 149.896503,153.552298 163.359074,126.679537 L170.516057,130.258028 Z" id="Semi-Circle" fill="#555"></path>
+    </g>
+</svg>

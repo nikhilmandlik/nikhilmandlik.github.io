@@ -1,0 +1,20 @@
+.bold {
+    font-weight: 800;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.list-view {
+    text-align: left;
+    line-height: 25px;
+}
