@@ -128,8 +128,8 @@
             case 'hiranyakashipu':
                 hiranyakashipu();
                 break;
-            case 'mace':
-                mace();
+            case 'croc':
+                croc();
                 break;
             default:
                 Help();
@@ -154,11 +154,11 @@
         init(cameraz, objy, 'Natalie');
     }
 
-    function man() {
-        var cameraz = 250;
-        var objy = -90;
-        addSelected('Mace');
-        init(cameraz, objy, 'Man');
+    function croc() {
+        var cameraz = 100;
+        var objy = -20;
+        addSelected('croc');
+        init(cameraz, objy, 'croc');
     }
 
     function hiranyakashipu() {

@@ -172,9 +172,9 @@ function init(cameraz, objy, modelname) {
         loader1.load(texturelocation1);
     }
 
-    if (modelname === 'Man') {
-        var texturelocation = '3DModels/Man/Man.jpg';
-        var objlocation1 = '3DModels/Man/Man.obj';
+    if (modelname === 'croc') {
+        var texturelocation = '3DModels/Croc/Croc.png';
+        var objlocation1 = '3DModels/Croc/Croc.obj';
 
         // model 1
         var loader1 = new THREE.OBJLoader();
@@ -196,32 +196,6 @@ function init(cameraz, objy, modelname) {
             texture.needsUpdate = true;
         } );
         loader.load(texturelocation);
-    }
-
-    if (modelname === 'Help') {
-        var texturelocation1 = '3DModels/Help/Help.jpg';
-        var objlocation1 = '3DModels/Help/Help.obj';
-
-        // model 1
-        var loader1 = new THREE.OBJLoader();
-        loader1.addEventListener( 'load', function ( event ) {
-            var object1 = event.content;
-            for ( var i = 0, l = object1.children.length; i < l; i ++ ) {
-                object1.children[ i ].material.map = texture1;
-            }
-            object1.position.y = objectpositiony;
-            scene.add( object1 );
-        });
-        loader1.load(objlocation1);
-
-        // texture 1
-        var texture1 = new THREE.Texture();
-        var loader1 = new THREE.ImageLoader();
-        loader1.addEventListener( 'load', function ( event ) {
-            texture1.image = event.content;
-            texture1.needsUpdate = true;
-        } );
-        loader1.load(texturelocation1);
     }
 
     renderer = new THREE.WebGLRenderer({ clearAlpha: 1, antialias: true });
